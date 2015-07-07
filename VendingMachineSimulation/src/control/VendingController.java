@@ -33,15 +33,15 @@ public class VendingController implements VendingControllerInterface {
 
 	@Override
 	public void vendProduct(int vendingButtonIndex) {
-		VendingSlotInterface slotToVendFrom = getSlotToVendFrom(vendingButtonIndex);
-		if (slotToVendFrom.getProductQuantity() > 0) {
-			DispensibleItem itemFromSlot = slotToVendFrom.getDispensibleItem();
+		VendingSlotInterface slotToVend = getSlotToVendFrom(vendingButtonIndex);
+		if (slotToVend.getProductQuantity() > 0) {
+			DispensibleItem itemFromSlot = slotToVend.getDispensibleItem();
 			UserBalanceInterface userBalance = this.userAccountTeller.getUserBalance();
 			double userBalanceValue = userBalance.getBalanceValue();
 
 			if (userBalanceValue >= itemFromSlot.priceOfItem()) {
 				this.dispensedItemChute.addItemToChute(itemFromSlot);
-				slotToVendFrom.subtractProductQuantityByOne();
+				slotToVend.subtractProductQuantityByOne();
 				userBalance.subtractFunds(Double.toString(itemFromSlot.priceOfItem()));
 				this.userAccountTeller.getChangeManager().makeChange();
 				this.vendingWindow.showThankYouMessage();
