@@ -27,7 +27,7 @@ public class VendingController implements VendingControllerInterface {
 		this.userAccountTeller = userAccountTeller;
 		this.vendingWindow = vendingWindow;
 		int delayInMilliseconds = 1500;
-		timerForShowingInsertCoins = new ShowInsertCoinTimer(delayInMilliseconds,
+		this.timerForShowingInsertCoins = new ShowInsertCoinTimer(delayInMilliseconds,
 				new InsertCoinDisplayUpdateActionListener(this.vendingWindow));
 	}
 
