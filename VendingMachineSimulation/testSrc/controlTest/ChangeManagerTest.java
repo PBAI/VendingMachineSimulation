@@ -76,7 +76,7 @@ public class ChangeManagerTest extends TestCase {
 		assertTrue(vendingWindow.getShowUpdatedUserBalanceWasCalled());
 	}
 
-	public void testMakeChange_DimesOnlyBalance() throws Exception {
+	public void testMakeChange_WithDimesOnlyBalance() throws Exception {
 		UserBalance userBalance = new UserBalance();
 		userBalance.addFunds(InsertedCoinPiece.DIME);
 		userBalance.addFunds(InsertedCoinPiece.DIME);
