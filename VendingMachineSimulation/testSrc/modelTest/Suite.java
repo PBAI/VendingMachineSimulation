@@ -17,7 +17,6 @@ public class Suite extends TestCase {
 		suite.addTestSuite(UserAccountTellerTest.class);
 		suite.addTestSuite(UserBalanceTest.class);
 		suite.addTestSuite(ValidCoinTest.class);
-		suite.addTestSuite(VendingSlotCollectionTest.class);
 		suite.addTestSuite(VendingSlotTest.class);
 		return suite;
 	}
