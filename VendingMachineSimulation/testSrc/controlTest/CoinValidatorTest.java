@@ -1,9 +1,9 @@
 package controlTest;
 
-import control.CoinValidator;
-import control.CoinValidatorInterface;
 import junit.framework.TestCase;
 import model.InsertedCoinPiece;
+import control.CoinValidator;
+import control.CoinValidatorInterface;
 
 public class CoinValidatorTest extends TestCase {
 
