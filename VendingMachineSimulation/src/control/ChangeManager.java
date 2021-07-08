@@ -89,11 +89,4 @@ public class ChangeManager implements ChangeManagerInterface {
 		return this.vendingWindow;
 	}
 
-	public UserBalanceInterface getUserBalance() {
-		return this.userBalance;
-	}
-
-	public ChangeValueInterface getChangeValue() {
-		return this.changeValue;
-	}
 }

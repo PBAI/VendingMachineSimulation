@@ -17,12 +17,6 @@ public class ChangeManagerTest extends TestCase {
 		assertSame(ChangeManagerInterface.class, ChangeManager.class.getInterfaces()[0]);
 	}
 
-	public void testGetUserBalance() throws Exception {
-		MockUserBalance userBalance = new MockUserBalance();
-		ChangeManager changeManager = new ChangeManager(userBalance, new MockCoinReturnTray(),
-				new MockVendingWindow(), new MockChangeValue());
-		assertSame(userBalance, changeManager.getUserBalance());
-	}
 
 	public void testGetCoinReturnTray() throws Exception {
 		MockCoinReturnTray coinReturnTray = new MockCoinReturnTray();
@@ -36,13 +30,6 @@ public class ChangeManagerTest extends TestCase {
 		ChangeManagerInterface changeManager = new ChangeManager(new MockUserBalance(),
 				new MockCoinReturnTray(), vendingWindow, new MockChangeValue());
 		assertSame(vendingWindow, changeManager.getVendingWindow());
-	}
-
-	public void testGetChangeValue() throws Exception {
-		MockChangeValue changeValue = new MockChangeValue();
-		ChangeManager changeManager = new ChangeManager(new MockUserBalance(),
-				new MockCoinReturnTray(), new MockVendingWindow(), changeValue);
-		assertSame(changeValue, changeManager.getChangeValue());
 	}
 
 	public void testMakeChange_QuartersOnlyBalance() throws Exception {

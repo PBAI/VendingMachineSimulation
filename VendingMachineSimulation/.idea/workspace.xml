@@ -229,6 +229,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ChangeManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="VendingMachineSimulation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="controlTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="controlTest" />
+      <option name="MAIN_CLASS_NAME" value="controlTest.ChangeManagerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CoinValidatorTest.testCoinIsValidReturnsTrueWhenValidCoinIsInserted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="VendingMachineSimulation" />
       <extension name="coverage">
@@ -274,10 +290,12 @@
     <list>
       <item itemvalue="JUnit.AllTest" />
       <item itemvalue="JUnit.CoinValidatorTest.testCoinIsValidReturnsTrueWhenValidCoinIsInserted" />
+      <item itemvalue="JUnit.ChangeManagerTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.AllTest" />
+        <item itemvalue="JUnit.ChangeManagerTest" />
         <item itemvalue="JUnit.CoinValidatorTest.testCoinIsValidReturnsTrueWhenValidCoinIsInserted" />
       </list>
     </recent_temporary>
