@@ -22,11 +22,4 @@ public class DimeButtonListener implements ActionListener {
 				.addInsertedCoinValueToUserBalanceIfCoinIsValid(this.dimeInsertedCoinPiece);
 	}
 
-	public CoinInsertionManagerInterface getCoinInsertionManager() {
-		return this.coinInsertionManager;
-	}
-
-	public InsertedCoinPiece getInsertedCoinPiece() {
-		return this.dimeInsertedCoinPiece;
-	}
 }

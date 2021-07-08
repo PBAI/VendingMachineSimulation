@@ -77,7 +77,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.AllTest">
+  <component name="RunManager" selected="Application.ApplicationLauncher">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -194,6 +194,20 @@
       <listeners />
       <method />
     </configuration>
+    <configuration name="ApplicationLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="startup.ApplicationLauncher" />
+      <module name="VendingMachineSimulation" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="startup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -291,9 +305,11 @@
       <item itemvalue="JUnit.AllTest" />
       <item itemvalue="JUnit.CoinValidatorTest.testCoinIsValidReturnsTrueWhenValidCoinIsInserted" />
       <item itemvalue="JUnit.ChangeManagerTest" />
+      <item itemvalue="Application.ApplicationLauncher" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ApplicationLauncher" />
         <item itemvalue="JUnit.AllTest" />
         <item itemvalue="JUnit.ChangeManagerTest" />
         <item itemvalue="JUnit.CoinValidatorTest.testCoinIsValidReturnsTrueWhenValidCoinIsInserted" />

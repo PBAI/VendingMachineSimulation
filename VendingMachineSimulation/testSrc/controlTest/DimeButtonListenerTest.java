@@ -16,17 +16,6 @@ public class DimeButtonListenerTest extends TestCase {
 		assertSame(ActionListener.class, DimeButtonListener.class.getInterfaces()[0]);
 	}
 
-	public void testGetCoinInsertionManager() throws Exception {
-		MockCoinInsertionManager coinInsertionManager = new MockCoinInsertionManager();
-		DimeButtonListener listener = new DimeButtonListener(coinInsertionManager);
-		assertSame(coinInsertionManager, listener.getCoinInsertionManager());
-	}
-
-	public void testGetDimeInsertedCoinPiece() throws Exception {
-		DimeButtonListener listener = new DimeButtonListener(new MockCoinInsertionManager());
-		assertSame(InsertedCoinPiece.DIME, listener.getInsertedCoinPiece());
-	}
-
 	public void testActionPerformed() throws Exception {
 		MockCoinInsertionManager coinInsertionManager = new MockCoinInsertionManager();
 		DimeButtonListener listener = new DimeButtonListener(coinInsertionManager);
