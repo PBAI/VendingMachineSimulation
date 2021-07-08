@@ -52,19 +52,4 @@ public class CoinInsertionManager implements CoinInsertionManagerInterface {
 		this.vendingWindow.showReturnedPennyAmount(this.coinReturnTray.getPenniesInTray().size());
 	}
 
-	public CoinValidatorInterface getCoinValidator() {
-		return this.coinValidator;
-	}
-
-	public UserBalanceInterface getUserBalance() {
-		return this.userBalance;
-	}
-
-	public CoinReturnTrayInterface getCoinReturnTray() {
-		return this.coinReturnTray;
-	}
-
-	public VendingWindowInterface getVendingWindow() {
-		return this.vendingWindow;
-	}
 }
