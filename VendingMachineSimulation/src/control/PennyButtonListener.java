@@ -20,12 +20,4 @@ public class PennyButtonListener implements ActionListener {
 		this.coinInsertionManager
 				.addInsertedCoinValueToUserBalanceIfCoinIsValid(this.pennyInsertedCoinPiece);
 	}
-
-	public CoinInsertionManagerInterface getCoinInsertionManager() {
-		return this.coinInsertionManager;
-	}
-
-	public InsertedCoinPiece getInsertedCoinPiece() {
-		return this.pennyInsertedCoinPiece;
-	}
 }
