@@ -77,7 +77,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.AllTest">
+  <component name="RunManager" selected="Application.ApplicationLauncher">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -302,15 +302,15 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.ApplicationLauncher" />
       <item itemvalue="JUnit.AllTest" />
       <item itemvalue="JUnit.CoinValidatorTest.testCoinIsValidReturnsTrueWhenValidCoinIsInserted" />
       <item itemvalue="JUnit.ChangeManagerTest" />
-      <item itemvalue="Application.ApplicationLauncher" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AllTest" />
         <item itemvalue="Application.ApplicationLauncher" />
+        <item itemvalue="JUnit.AllTest" />
         <item itemvalue="JUnit.ChangeManagerTest" />
         <item itemvalue="JUnit.CoinValidatorTest.testCoinIsValidReturnsTrueWhenValidCoinIsInserted" />
       </list>
@@ -330,6 +330,7 @@
       <workItem from="1625741933343" duration="498000" />
       <workItem from="1625781388212" duration="27000" />
       <workItem from="1625781642155" duration="416000" />
+      <workItem from="1626262610717" duration="634000" />
     </task>
     <servers />
   </component>
