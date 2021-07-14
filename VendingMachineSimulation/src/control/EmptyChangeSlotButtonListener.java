@@ -27,8 +27,4 @@ public class EmptyChangeSlotButtonListener implements ActionListener {
 		vendingWindow.showReturnedNickelAmount(coinReturnTray.getNickelsInTray().size());
 		vendingWindow.showReturnedPennyAmount(coinReturnTray.getPenniesInTray().size());
 	}
-
-	public ChangeManagerInterface getChangeManager() {
-		return this.changeManager;
-	}
 }

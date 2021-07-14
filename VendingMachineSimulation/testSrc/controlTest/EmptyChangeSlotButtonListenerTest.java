@@ -12,17 +12,6 @@ import control.EmptyChangeSlotButtonListener;
 
 public class EmptyChangeSlotButtonListenerTest extends TestCase {
 
-	public void testImplementsActionListener() throws Exception {
-		assertEquals(1, EmptyChangeSlotButtonListener.class.getInterfaces().length);
-		assertSame(ActionListener.class, EmptyChangeSlotButtonListener.class.getInterfaces()[0]);
-	}
-
-	public void testGetChangeManager() throws Exception {
-		MockChangeManager changeManager = new MockChangeManager();
-		EmptyChangeSlotButtonListener listener = new EmptyChangeSlotButtonListener(changeManager);
-		assertSame(changeManager, listener.getChangeManager());
-	}
-
 	public void testActionPerformed() throws Exception {
 		MockChangeManager changeManager = new MockChangeManager();
 		MockVendingWindow vendingWindow = new MockVendingWindow();
